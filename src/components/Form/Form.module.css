@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formInput {
+  width: 100%;
+  padding: 6px;
+  margin: 4px 0 12px 0;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.formInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.formBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formBtnCalc,
+.formBtnRes {
+  width: 80%;
+  margin: 4px 0;
+  padding: 12px 0;
+  border-radius: 4px;
+}
+
+.formBtnCalc {
+  background-color: #fbb9b9;
+  border: 1px solid #fbb9b9;
+  margin-left: 4px;
+}
+
+.formBtnRes {
+  background-color: #ffcccc;
+  border: 1px solid #ffcccc;
+  margin-right: 4px;
+}
+
+.formBtnCalc:hover {
+  background-color: #fca9a9;
+}
+
+.formBtnRes:hover {
+  background-color: #fcc2c2;
+}
+
+.result {
+  text-align: center;
+  margin: 24px 30% 20px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.result span {
+  display: block;
+  font-size: 24px;
+  padding-top: 3px;
+}
