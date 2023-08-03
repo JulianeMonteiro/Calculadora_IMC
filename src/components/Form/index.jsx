@@ -58,6 +58,23 @@ const Form = () => {
           <h3>
             Seu IMC é: <span>{imc.toFixed(1)}</span>
           </h3>
+          {imc < 16 ? (
+            <p>Magreza Grave</p>
+          ) : imc >= 16 && imc < 17 ? (
+            <p>Magreza Moderada</p>
+          ) : imc >= 17 && imc < 18.5 ? (
+            <p>Sobrepeso </p>
+          ) : imc >= 18.5 && imc < 24.9 ? (
+            <p>Peso Normal </p>
+          ) : imc >= 25 && imc < 29.9 ? (
+            <p> Sobrepeso</p>
+          ) : imc >= 30 && imc < 34.9 ? (
+            <p>Obesidade Grau 1</p>
+          ) : imc >= 35 && imc < 39.9 ? (
+            <p>Obesidade Grau 2 (Severa)</p>
+          ) : (
+            <p>Obesidade Grau 3 (Mórbida) </p>
+          )}
         </div>
       )}
     </div>
